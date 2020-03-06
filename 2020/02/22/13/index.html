@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">（九） python 高级特性 | 42cloud and 42team</title>
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+<!--  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">-->
+  <link rel="stylesheet" id="saukra_css-css" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/font.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/insight.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "42cloud";
+  mashiro_option.author_name = "";
+  mashiro_option.site_url = "http://123.56.84.132/public";
+  mashiro_option.v_appId = "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz";
+  mashiro_option.v_appKey = "mgOpfzbkHYqU92CV4IDlAUHQ";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+</html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-dot">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="http://123.56.84.132/public">
+          <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/4311c9ad04554119.png">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>Live your life with passion! With some drive!</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="http://github.com/xbclub" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  
+  <div id="video-container" style="display: none;">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu" >
+    </div>
+  </div>
+  
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">42cloud</span>
+            <span class="shironeko"></span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/public/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/public/categories/奇思妙想">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-lightbulb-o faa-shake" aria-hidden="true"></i>
+                    奇思妙想
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/public/categories/奇思妙想/实用技巧">
+                          <i class="fa " aria-hidden="true"></i>
+                          实用技巧
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/public/categories/奇思妙想/漫画">
+                          <i class="fa " aria-hidden="true"></i>
+                          漫画
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/public/categories/代码学习">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    代码学习
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/public/categories/代码学习/Python">
+                          <i class="fa " aria-hidden="true"></i>
+                          Python
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/public/categories/代码学习/Java">
+                          <i class="fa " aria-hidden="true"></i>
+                          Java
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/public/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN@master/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">（九） python 高级特性</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2020-2-22&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <blockquote>
+<p>在python中，我们所拥有以下几种非常有用的高级特性能够使我们在编写代码的过程中，使我们的代码量大大减少。</p>
+</blockquote>
+<h4 id="切片（Slice）"><a href="#切片（Slice）" class="headerlink" title="- 切片（Slice）"></a>- 切片（Slice）</h4><p><code>切片</code>常用于从某个对象中<code>抽取部分值</code>的情况，只要<code>条件表达式</code>得当，可以通过<code>单次</code>或<code>多次</code>切片操作实现<code>任意目标值</code>的<code>切取</code>。 如果你想尽快知道list(range(1,21))实现原理，可以先观看本章的列表生成器部分。</p>
+<pre><code>L = list(range(1,21))   #自定义一个列表，存入有序数列1-20共二十个数
+print(L)   #打印列表L
+print(type(L))  #打印列表类型
+print(L[0:5])  #打印列表前五个值即下标为0-4，[0:5]表示从索引0开始，直到索引5结束，但不包括索引3
+print(L[:5])  #与上条功能相同，表达式更简便
+print(L[17:20])  #打印列表最后三位数字即下标为17，18，19的三位数。[17:20]表示从索引17开始，直到索引20结束，但不包括索引20。
+print(L[-3:])   #与上条功能相同，表达式更简便
+print(L[:10:5])  #列表的前十个数中，每五个数取一个值
+print(L[::5])   #列表的所有数中，每五个数从中取一个
+</code></pre><p>打印为：</p>
+<pre><code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+&lt;class &#39;list&#39;&gt;
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[18, 19, 20]
+[18, 19, 20]
+[1, 6]
+[1, 6, 11, 16]
+</code></pre><p><code>tuple</code>也是<code>list</code>的一种，<code>区别</code>是tuple<code>不可变</code>，所以tuple也是<code>可以</code>使用<code>切片</code>操作，不过<code>结果</code>仍是<code>tuple</code>。<code>字符串</code>‘ XXX ‘也可以看成一种<code>list</code>,不过每<code>一个字符</code>就是<code>一个元素</code>，所以<code>字符串</code>也是可以使用<code>切片</code>操作，不过<code>结果</code>仍是<code>字符串</code>。</p>
+<pre><code>T = (1,2,3,4,5,6,7,8,9,10)  #创建一个tuple
+print(T)  #打印tuple
+print(T[:])  #[:]效果与本身相同
+print(T[:3])  #打印tuple前三个值
+print(type(T[:]))  #打印tuple切片后获取到的数据的数据类型
+
+S = &quot;Python&quot;  #创建一个字符串
+print(S[:3])  #切片获取前三个值，即组合成的新的字符串
+print(type(S[:]))  #获取字符串切片后的数据的数据类型
+</code></pre><p>打印为：</p>
+<pre><code>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+(1, 2, 3)
+&lt;class &#39;tuple&#39;&gt;
+Pyt
+&lt;class &#39;str&#39;&gt;
+</code></pre><h4 id="迭代（Iteration）"><a href="#迭代（Iteration）" class="headerlink" title="- 迭代（Iteration）"></a>- 迭代（Iteration）</h4><p>如果给定一个list或tuple等，我们可以通过<code>for循环</code>进行<code>遍历</code>，这种<code>遍历</code>我们叫做<code>迭代</code>。在<code>Python</code>中<code>迭代</code>是通过<code>for...in...</code>来完成的。 我们判断一个对象是不是迭代对象可以引用 collections.abc 模板下的Iterable。例如：</p>
+<pre><code>#导入
+from collections.abc import Iterable
+
+L = list(range(5))  #创建数组
+print(isinstance(L,Iterable))  #判断数组 L 是否是可迭代对象并打印出来
+print(isinstance(&#39;abc&#39;,Iterable))  #判断 字符串&#39;abc&#39; 是否是可迭代对象并打印出来
+# 遍历数组L，并打印
+for value in L:
+    print(value)
+</code></pre><p>打印为：</p>
+<pre><code>True
+True
+0
+1
+2
+3
+4
+</code></pre><p>对于<code>dict</code>我们也可以进行<code>迭代</code>，但由于<code>键值对</code>我们<code>默认</code>只<code>迭代key</code>，如果想要迭代<code>value</code>我们可以使用<code>dict.values()</code>,如果想要<code>同时</code>迭代<code>key</code>和<code>value</code>我们则需要使用<code>dict.items()</code>。</p>
+<pre><code>d = {&quot;Join&quot;: &quot;蛋糕&quot;, &quot;Tom&quot;: &quot;雪糕&quot;}  #创建dict
+print(&quot;-----只迭代key-----&quot;)
+for key in d:
+    print(key)
+print(&quot;-----只迭代value-----&quot;)
+for value in d.values():
+    print(value)
+print(&quot;-----同时迭代key和value-----&quot;)
+for k,v in d.items():
+    print(&quot;key : &quot; + k , &quot;\tvalue:&quot; , v)
+</code></pre><p>打印结果为：</p>
+<pre><code>-----只迭代key-----
+Join
+Tom
+-----只迭代value-----
+蛋糕
+雪糕
+-----同时迭代key和value-----
+key : Join  value: 蛋糕
+key : Tom   value: 雪糕
+</code></pre><p>像我们刚刚<code>迭代dict</code>，能够<code>同时</code>获取<code>两个值</code>，其实，<code>元素对</code>返回的是一个<code>元组数据</code>，所以可以我们<code>拆分</code>成<code>多个变量</code>去接，方便我们<code>同时引用多个变量</code>。</p>
+<pre><code>for x, y in [(1, &#39;a&#39;), (2, &#39;b&#39;), (3, &#39;c&#39;)]:
+    print(&#39;x =&#39;, x, &#39;y =&#39;, y)
+</code></pre><p>打印为：</p>
+<pre><code>x = 1 y = a
+x = 2 y = b
+x = 3 y = c
+</code></pre><p>如果我们想要<code>获取</code>到迭代对象的<code>下标</code>，我们可以使用<code>Python</code>内置的<code>enumerate</code>函数把它变成<code>索引-元素对</code>，这样我们就可以同时迭代<code>索引</code>和<code>元素对</code>本身。</p>
+<pre><code>#迭代dict，默认只迭代key值
+for i, key in enumerate({&quot;Join&quot;: &quot;蛋糕&quot;, &quot;Tom&quot;: &quot;雪糕&quot;}):
+    print(&#39;i =&#39;, i, &#39;key =&#39;, key)
+</code></pre><p>打印为：</p>
+<pre><code>i = 0 key = Join
+i = 1 key = Tom
+</code></pre><h4 id="列表生成式"><a href="#列表生成式" class="headerlink" title="- 列表生成式"></a>- 列表生成式</h4><p><code>列表生成式</code>即<code>List Comprehensions</code>，是<code>Python</code>内置的非常简单却强大的可以用来<code>创建list</code>的<code>生成式</code>。 例如：</p>
+<pre><code>L1 = list(range(1,10))
+L2 = list(range(0,10))
+L3 = list(range(10))  #等同第二个
+print(L1)
+print(L2)
+print(L3)
+</code></pre><p>打印为：</p>
+<pre><code>[1, 2, 3, 4, 5, 6, 7, 8, 9]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre><p>当然列表生成器还有更多略微复杂的操作，如果要生成[1x1, 2x2, 3x3, …, 10x10]怎么做？方法一是循环，方法二则是我们使用列表生成器代替循环，例如：</p>
+<pre><code>L1 = []
+# 方法一：使用for循环，每次循环都在列表结尾进行追加
+for x in range(1,11):
+    L1.append(x * x)
+#方法二：列表生成器
+L2 = [a * a for a in range(1,11)]
+print(L1)
+print(L2)
+</code></pre><p>打印为：</p>
+<pre><code>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+</code></pre><p>我们甚至可以进行更多操作：</p>
+<pre><code># 创建成功列表后在判断进行取出源列表内的所有偶数集
+L1 = [x * x for x in range(1,11) if x % 2 == 0]
+#有if那么我们肯定就有else语句
+L2 = [x * x if x % 2 == 0 else 0 for x in range(1,11)]
+#从第一个字符串中挨个取出作为x,从第二个字符串中挨个取出作为y，并进行组合排列
+L3 = [x + y for x in &#39;唱跳R&#39; for y in &#39;吃喝玩&#39;]
+#把list中的所有字符串都变成小写
+L4 = [&#39;Boy&#39;,&#39;Girl&#39;,&#39;IBM&#39;]
+L4 = [s.lower() for s in L4]
+print(L1)
+print(L2)
+print(L3)
+print(L4)
+</code></pre><p>打印为：</p>
+<pre><code>[4, 16, 36, 64, 100]
+[0, 4, 0, 16, 0, 36, 0, 64, 0, 100]
+[&#39;唱吃&#39;, &#39;唱喝&#39;, &#39;唱玩&#39;, &#39;跳吃&#39;, &#39;跳喝&#39;, &#39;跳玩&#39;, &#39;R吃&#39;, &#39;R喝&#39;, &#39;R玩&#39;]
+[&#39;boy&#39;, &#39;girl&#39;, &#39;ibm&#39;]
+</code></pre><h4 id="生成器"><a href="#生成器" class="headerlink" title="- 生成器"></a>- 生成器</h4><ul>
+<li>什么是生成器 在<code>Python</code>中，一边<code>循环</code>一边<code>计算</code>的机制，称为<code>生成器</code>：<code>generator</code>。并且生成器<code>仅仅保存</code>了一套生成数值的<code>算法</code>，并且<code>没有</code>让这个算法现在就<code>开始执行</code>，<code>而是</code>我什么时候<code>调它</code>，它<code>什么时候</code>开始<code>计算</code>一个<code>新的值</code>，</li>
+<li>为什么要有生成器 如果<code>列表元素</code>按照<code>某种算法</code>推算出来，那我们就可以在<code>循环的过程中</code>不断<code>推算出</code>后续的<code>元素</code>，这样就<code>不必</code>创建<code>完整的list</code>，从而<code>节省</code>大量的<code>空间</code>。如果我们想要得到<code>庞大的数据</code>，又想让它占用<code>空间少</code>，那我们最好的方法就是使用<code>生成器</code>。 并给你返回。</li>
+</ul>
+<p>我们创建一个generator只需要把列表生成式的[]改为（）就可以。</p>
+<pre><code>g = (x for x in range(1,11))  #创建一个generator
+print(g)  #打印
+print(type(g))  #打印其类型
+print(&quot;-----使用next()获取generator的每一个值-----&quot;)
+#打印g的元素,next()只可以返回获得generator的下一个返回值，所以我们如果一直使用next()函数获取generator的每一个值会非常麻烦也不现实
+print(next(g))
+print(next(g))
+print(next(g))
+print(&quot;------使用for循环获取generator的每一个值-----&quot;)
+for i in g:
+    print(i)
+</code></pre><p>打印结果为:</p>
+<pre><code>&lt;generator object &lt;genexpr&gt; at 0x10fd64750&gt;
+&lt;class &#39;generator&#39;&gt;
+-----使用next()获取generator的每一个值-----
+1
+2
+3
+------使用for循环获取generator的每一个值-----
+4
+5
+6
+7
+8
+9
+10
+</code></pre><p>如果算法比较复杂，用类似列表生成式的for循环无法实现的时候，还可以用函数来实现。</p>
+<pre><code>def fib(max):
+    n, a, b = 0, 0, 1
+    while n &lt; max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+    return &#39;done&#39;
+
+f = fib(5)
+print(f)
+</code></pre><p>打印为：</p>
+<pre><code>&lt;generator object fib at 0x10353a750&gt;
+</code></pre><p>如果一个<code>函数</code>中<code>包含yield</code>关键字，那么<code>这个函数</code>就<code>不再是</code>一个普通函数，<code>而</code>是一个<code>generator</code>。generator的函数，在每次调用<code>next()</code>的时候执行，遇到<code>yield</code>语句<code>返回</code>，<code>再次执行</code>时<code>从</code>上次返回的<code>yield语句</code>处继续执行</p>
+<h4 id="迭代器"><a href="#迭代器" class="headerlink" title="- 迭代器"></a>- 迭代器</h4><ul>
+<li>生成器都是迭代器，而基本数据集合不属于迭代器，区别在于能不能使用next(), 可以用iter([])来讲基本集合类型转化为迭代器</li>
+<li>迭代器对象无法预知集合的长度，是一个在调用的时候才能获取到对应位置对象的惰性计算对象，是一种流的形式</li>
+<li>Python的for循环本质上就是通过不断调用next()函数实现的，</li>
+<li>Iterable 迭代类型 Iterator 迭代器</li>
+</ul>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/public/2020/03/04/2/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                C++指针与引用(包含智能指针)</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/public/2020/02/20/18/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                （八）python 函数（下）</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/public/',
+        CONTENT_URL: 'https://cdn.jsdelivr.net/gh/xbclub/hexo-back@gh-pages/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 42team<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2018</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/zoom.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/sakura-app.js"></script>
+
+<script src='https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<!--<script src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/busuanzi.pure.mini.js"></script>-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/4311c9ad04554119.png">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">42cloud</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="http://github.com/honjun" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="http://weibo.com/mashirozx?is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/public/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/public/categories/奇思妙想">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-lightbulb-o faa-shake" aria-hidden="true"></i>
+            奇思妙想
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/public/categories/奇思妙想/实用技巧">
+                  <i class="fa " aria-hidden="true"></i>
+                  实用技巧
+                </a>
+              </li>
+            
+              <li>
+                <a href="/public/categories/奇思妙想/漫画">
+                  <i class="fa " aria-hidden="true"></i>
+                  漫画
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/public/categories/代码学习">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            代码学习
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/public/categories/代码学习/Python">
+                  <i class="fa " aria-hidden="true"></i>
+                  Python
+                </a>
+              </li>
+            
+              <li>
+                <a href="/public/categories/代码学习/Java">
+                  <i class="fa " aria-hidden="true"></i>
+                  Java
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/public/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  
+</body>
+</html>

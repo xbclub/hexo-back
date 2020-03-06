@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">在？还没用Github? | 42cloud and 42team</title>
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+<!--  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">-->
+  <link rel="stylesheet" id="saukra_css-css" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/font.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/insight.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "42cloud";
+  mashiro_option.author_name = "";
+  mashiro_option.site_url = "http://123.56.84.132/public";
+  mashiro_option.v_appId = "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz";
+  mashiro_option.v_appKey = "mgOpfzbkHYqU92CV4IDlAUHQ";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+</html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-dot">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="http://123.56.84.132/public">
+          <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/4311c9ad04554119.png">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>Live your life with passion! With some drive!</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="http://github.com/xbclub" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  
+  <div id="video-container" style="display: none;">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu" >
+    </div>
+  </div>
+  
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">42cloud</span>
+            <span class="shironeko"></span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/public/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/public/categories/奇思妙想">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-lightbulb-o faa-shake" aria-hidden="true"></i>
+                    奇思妙想
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/public/categories/奇思妙想/实用技巧">
+                          <i class="fa " aria-hidden="true"></i>
+                          实用技巧
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/public/categories/奇思妙想/漫画">
+                          <i class="fa " aria-hidden="true"></i>
+                          漫画
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/public/categories/代码学习">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    代码学习
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/public/categories/代码学习/Python">
+                          <i class="fa " aria-hidden="true"></i>
+                          Python
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/public/categories/代码学习/Java">
+                          <i class="fa " aria-hidden="true"></i>
+                          Java
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/public/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN@master/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">在？还没用Github?</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2020-1-24&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <h2 id="关于本文章"><a href="#关于本文章" class="headerlink" title="关于本文章"></a>关于本文章</h2><p>  临睡之前没忍住戳了下大佬撩闲，果然被大佬顺杆抓住让我也来写东西。   平时我用的好多东西都是停留在“会用”的程度上，真的让我写出一个通俗又到位的教程还挺难的，所以这篇文章中可能有概念把握不好，请留意。</p>
+<h2 id="Github大名早有耳闻，为什么要用？"><a href="#Github大名早有耳闻，为什么要用？" class="headerlink" title="Github大名早有耳闻，为什么要用？"></a>Github大名早有耳闻，为什么要用？</h2><p>  这个我们要先说下Git是干嘛的。   众所周知Git是“版本控制系统”，作为初学者或许并不能在自己开发的过程中感受到版本控制的好处，但至少在你发现你的思路严重跑偏走进了死胡同的时候，通过版本控制你能很方便的回滚到跑偏之前的那个“版本”，不用一点点拆你写好的东西。而每完成一部分功能就提交一下，也有助于你管理自己的进度。 大型项目也会有上述问题，而且，在多人一同开发软件的时候，同样一份工程文件，每个人在自己电脑上做了不同的操作，当他们将代码合并到一起的时候，谁删了什么，谁加了什么，谁引用的文件被谁做了修改，如果没有个统一的管理办法就会出很多这种问题。   Git就是众多版本控制系统里很优秀而且广泛应用的一个，并且是Github唯一支持的代码库格式。   而为什么是Github？我也不知道Github是怎么发展起来的。只是显而易见，平时做开发经常听到的那些东西，大到spring、vue框架，小到一个Android控件一个数据结构实现，基本上只要是“开源”的东西，都作为一个个公开的Git库被放到Github上了。也就是说，你不仅可以把这些源码下载下来学习和使用，还可以参与开发做贡献（请让我抱大腿），而且种多开源项目你都可以在项目主页上直接找到使用教程和文档，总之一句话：Github全球最大的开源社区。   说回来，本身这就是一个代码托管平台，你自己的项目就可以用Github作为远程代码库来进行管理。那么接下来我们就要说这件事。</p>
+<h2 id="正题：从Git入手来使用Github"><a href="#正题：从Git入手来使用Github" class="headerlink" title="正题：从Git入手来使用Github"></a>正题：从Git入手来使用Github</h2><p>学习Github的过程也是学Git的过程。毕竟是Git-hub。 已经说过了Git是干嘛的，那么我们进一步说几个经常遇到的术语： 1. Repository (库)： 一般来说，一个库也就对应着一个项目，就是存放你代码和版本记录的地方。在Git中，除了在你电脑中会有一份记录你自己操作的本地库，还可以在服务器上有一份远程库用于同步多人的代码。 2. Commit (提交) 将你的修改记录提交到库中，也就是将当前工程内容与库中不一样的部分提交到库里，一次提交也就对应着我们一直说的一个“版本”记录。 3. Branch (分支) 分支是Git一个很重要的内容，对应的还有合并，不同的分支之间的内容不会互相干扰，它的应用场景也很多，比如在大型项目开发的过程中会分出生产版本和测试版本，测试版本自然是和生产版本独立开来，那么他们就可以作为两个分支，在测试分支中完成目标后合并到生产分支。现在我们只需要知道，但当你创建一个git库时，你就自动进入了一个分支，叫“主分支(master branch)”。 4. push (推送) 将当前本地库中的代码推送到远程库。 5. Pull (拉取) 将远程代码库中的内容拉去到本地库。</p>
+<h2 id="实践：将自己的Git库上传到Github上"><a href="#实践：将自己的Git库上传到Github上" class="headerlink" title="实践：将自己的Git库上传到Github上"></a>实践：将自己的Git库上传到Github上</h2><p>  好了，终于到了真正的正题了，其实本来应该直接写这部分的，奈何我磨洋工点的太深。   接下来我们要做的是，将Git应用到我们的一个工程上，然后将本地的Git库推到Github上。在这个例子中，我会用Maven随便搞个工程结构出来（看着舒服），然后在这个工程中创建Git，并做一次提交。最后将这个Git上传到Github上。   那么，安装Git然后再注册个Github账号吧    <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git官网下载页：https://git-scm.com/downloads</a>    <a href="https://github.com/" target="_blank" rel="noopener">GitHub：https://github.com/</a>   成功安装了Git之后，我们需要一个小配置，打开Git bash，通过下面两行命令给你自己做一个身份标识，这个信息会存在于你每次提交的版本中，用来标识这个版本属于谁：</p>
+<pre><code>git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;email@example.com&quot;
+</code></pre><p>效果： <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit00.png" alt></p>
+<h4 id="初始化版本库与添加要管理文件"><a href="#初始化版本库与添加要管理文件" class="headerlink" title="初始化版本库与添加要管理文件"></a>初始化版本库与添加要管理文件</h4><p>首先我们进到项目目录里，右键菜单里有个Git bash here，点击这个就可以直接打开Git bash，并且路径就是当前路径了，不用再手动打。 <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit01.png" alt> 可以看到打开的路径直接就是我文件路径： <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit02.png" alt> (上面这码当我没打) 确认bash已经进入了当前工程目录，我们就可以开始创建Git了：</p>
+<pre><code>git init //在当前目录初始化git
+git add . //注意最后的“.”，这个点代表当前目录，这行命令就是将当前整个目录添加到git暂存区
+</code></pre><p>效果： <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit03.png" alt> 不要在意底下那堆warning，这是我文件格式有点小问题，不影响操作。</p>
+<h4 id="提交一个版本"><a href="#提交一个版本" class="headerlink" title="提交一个版本"></a>提交一个版本</h4><p>使用commit命令提交版本</p>
+<pre><code>$ git commit -m &quot;message&quot;
+</code></pre><p>其中，-m参数表示message，也就是为这个版本添加一条注释消息，其作用就是“注释”。 效果： <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit04.png" alt> 可以看到输出信息，命令执行后我们将文件提交到了master分支,版本id d839f16,并且注释了“初始化工作目录”。</p>
+<h4 id="同步到Github上去！"><a href="#同步到Github上去！" class="headerlink" title="同步到Github上去！"></a>同步到Github上去！</h4><p>首先在github上创建一个空项目，命名随意。 <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit06.png" alt> 创建完成后进入项目默认页面，你会看到页面已经给出了该远程git库的链接，我们要用的就是这个链接。 <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit07-300x45.png" alt> 而再往下翻你还能看到他已经给你如何从已存在的项目push上来的方法了。。就是这样。 <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit08-300x59.png" alt></p>
+<pre><code>git remote add origin https://github.com/Pablo-Zen/Testproj.git
+git push -u origin master
+</code></pre><p>效果： <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit09.png" alt> 现在再刷新我们刚才那个页面，默认给的链接和方法提示都没了，变成了我们工程目录的样子。 <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit10.png" alt> 然而回看我们的工程目录，很明显少了个src文件夹： <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/pabgit01.png" alt> 这并不是问题，其实在commit那条命令执行的截图里就可以看到，输出的都是文件，而我的目录里src中还是两个文件夹，并没有实际的文件，所以也就没被管理。 至此，我们完成了本地git库上传github的操作。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>  第一次写教程感觉自己太墨迹了，其实看下来一遍就能知道，这个操作没什么内容，一共就那么几个命令，可以说是git最基本的基本吧。 希望以后再写东西的时候，能切重点高效一些。 图片马赛克就当我没打吧。</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/public/2020/01/27/10/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                （一） Linux文件系统和目录</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/public/2020/01/22/23/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                （三）Java的数据类型</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/public/',
+        CONTENT_URL: 'https://cdn.jsdelivr.net/gh/xbclub/hexo-back@gh-pages/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 42team<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2018</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/zoom.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/sakura-app.js"></script>
+
+<script src='https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<!--<script src="https://cdn.jsdelivr.net/gh/xbclub/staticCDN/js/busuanzi.pure.mini.js"></script>-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/xbclub/CDN/wp-content/uploads/2020/01/4311c9ad04554119.png">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">42cloud</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="http://github.com/honjun" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="http://weibo.com/mashirozx?is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/public/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/public/categories/奇思妙想">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-lightbulb-o faa-shake" aria-hidden="true"></i>
+            奇思妙想
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/public/categories/奇思妙想/实用技巧">
+                  <i class="fa " aria-hidden="true"></i>
+                  实用技巧
+                </a>
+              </li>
+            
+              <li>
+                <a href="/public/categories/奇思妙想/漫画">
+                  <i class="fa " aria-hidden="true"></i>
+                  漫画
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/public/categories/代码学习">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            代码学习
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/public/categories/代码学习/Python">
+                  <i class="fa " aria-hidden="true"></i>
+                  Python
+                </a>
+              </li>
+            
+              <li>
+                <a href="/public/categories/代码学习/Java">
+                  <i class="fa " aria-hidden="true"></i>
+                  Java
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/public/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  
+</body>
+</html>

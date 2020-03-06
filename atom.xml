@@ -6,7 +6,7 @@
   <link href="/public/atom.xml" rel="self"/>
   
   <link href="http://123.56.84.132/public/"/>
-  <updated>2020-03-05T13:19:45.527Z</updated>
+  <updated>2020-03-06T05:38:55.452Z</updated>
   <id>http://123.56.84.132/public/</id>
   
   <author>
@@ -17,33 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://123.56.84.132/public/2020/03/05/hello-world/"/>
-    <id>http://123.56.84.132/public/2020/03/05/hello-world/</id>
-    <published>2020-03-05T13:19:45.527Z</published>
-    <updated>2020-03-05T13:19:45.527Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>C++指针与引用(包含智能指针)</title>
-    <link href="http://123.56.84.132/public/2020/03/04/c-e6-8c-87-e9-92-88-e4-b8-8e-e5-bc-95-e7-94-a8-e5-8c-85-e5-90-ab-e6-99-ba-e8-83-bd-e6-8c-87-e9-92-88/"/>
-    <id>http://123.56.84.132/public/2020/03/04/c-e6-8c-87-e9-92-88-e4-b8-8e-e5-bc-95-e7-94-a8-e5-8c-85-e5-90-ab-e6-99-ba-e8-83-bd-e6-8c-87-e9-92-88/</id>
+    <link href="http://123.56.84.132/public/2020/03/04/2/"/>
+    <id>http://123.56.84.132/public/2020/03/04/2/</id>
     <published>2020-03-04T09:17:16.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.452Z</updated>
     
     <summary type="html">
     
@@ -58,17 +36,19 @@
     
     </summary>
     
-      <category term="C++" scheme="http://123.56.84.132/public/categories/C/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="C++" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/C/"/>
     
     
   </entry>
   
   <entry>
     <title>（九） python 高级特性</title>
-    <link href="http://123.56.84.132/public/2020/02/22/ef-bc-88-e4-b9-9d-ef-bc-89-python-e9-ab-98-e7-ba-a7-e7-89-b9-e6-80-a7/"/>
-    <id>http://123.56.84.132/public/2020/02/22/ef-bc-88-e4-b9-9d-ef-bc-89-python-e9-ab-98-e7-ba-a7-e7-89-b9-e6-80-a7/</id>
+    <link href="http://123.56.84.132/public/2020/02/22/13/"/>
+    <id>http://123.56.84.132/public/2020/02/22/13/</id>
     <published>2020-02-22T11:42:27.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.296Z</updated>
     
     <summary type="html">
     
@@ -85,9 +65,9 @@
     
     </summary>
     
-      <category term="Python" scheme="http://123.56.84.132/public/categories/Python/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="代码学习" scheme="http://123.56.84.132/public/categories/Python/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Python" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/Python/"/>
     
     
       <category term="代码" scheme="http://123.56.84.132/public/tags/%E4%BB%A3%E7%A0%81/"/>
@@ -100,10 +80,10 @@
   
   <entry>
     <title>（八）python 函数（下）</title>
-    <link href="http://123.56.84.132/public/2020/02/20/ef-bc-88-e5-85-ab-ef-bc-89python-e5-87-bd-e6-95-b0-ef-bc-88-e4-b8-8b-ef-bc-89/"/>
-    <id>http://123.56.84.132/public/2020/02/20/ef-bc-88-e5-85-ab-ef-bc-89python-e5-87-bd-e6-95-b0-ef-bc-88-e4-b8-8b-ef-bc-89/</id>
+    <link href="http://123.56.84.132/public/2020/02/20/18/"/>
+    <id>http://123.56.84.132/public/2020/02/20/18/</id>
     <published>2020-02-20T04:27:00.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.404Z</updated>
     
     <summary type="html">
     
@@ -118,9 +98,9 @@
     
     </summary>
     
-      <category term="Python" scheme="http://123.56.84.132/public/categories/Python/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="代码学习" scheme="http://123.56.84.132/public/categories/Python/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Python" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/Python/"/>
     
     
       <category term="代码" scheme="http://123.56.84.132/public/tags/%E4%BB%A3%E7%A0%81/"/>
@@ -131,10 +111,10 @@
   
   <entry>
     <title>(七) python 函数(上)</title>
-    <link href="http://123.56.84.132/public/2020/02/19/e4-b8-83-python-e5-87-bd-e6-95-b0-e4-b8-8a/"/>
-    <id>http://123.56.84.132/public/2020/02/19/e4-b8-83-python-e5-87-bd-e6-95-b0-e4-b8-8a/</id>
+    <link href="http://123.56.84.132/public/2020/02/19/3/"/>
+    <id>http://123.56.84.132/public/2020/02/19/3/</id>
     <published>2020-02-19T09:07:49.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.764Z</updated>
     
     <summary type="html">
     
@@ -149,9 +129,9 @@
     
     </summary>
     
-      <category term="Python" scheme="http://123.56.84.132/public/categories/Python/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="代码学习" scheme="http://123.56.84.132/public/categories/Python/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Python" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/Python/"/>
     
     
       <category term="代码" scheme="http://123.56.84.132/public/tags/%E4%BB%A3%E7%A0%81/"/>
@@ -162,10 +142,10 @@
   
   <entry>
     <title>Github+jsDelivr+PicGo 打造高可用图床</title>
-    <link href="http://123.56.84.132/public/2020/02/16/githubjsdelivrpicgo-e6-89-93-e9-80-a0-e9-ab-98-e5-8f-af-e7-94-a8-e5-9b-be-e5-ba-8a/"/>
-    <id>http://123.56.84.132/public/2020/02/16/githubjsdelivrpicgo-e6-89-93-e9-80-a0-e9-ab-98-e5-8f-af-e7-94-a8-e5-9b-be-e5-ba-8a/</id>
+    <link href="http://123.56.84.132/public/2020/02/16/20/"/>
+    <id>http://123.56.84.132/public/2020/02/16/20/</id>
     <published>2020-02-16T05:58:26.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.476Z</updated>
     
     <summary type="html">
     
@@ -188,10 +168,10 @@
   
   <entry>
     <title>（五）运算符和表达式（下）</title>
-    <link href="http://123.56.84.132/public/2020/02/09/ef-bc-88-e4-ba-94-ef-bc-89-e8-bf-90-e7-ae-97-e7-ac-a6-e5-92-8c-e8-a1-a8-e8-be-be-e5-bc-8f-ef-bc-88-e4-b8-8b-ef-bc-89/"/>
-    <id>http://123.56.84.132/public/2020/02/09/ef-bc-88-e4-ba-94-ef-bc-89-e8-bf-90-e7-ae-97-e7-ac-a6-e5-92-8c-e8-a1-a8-e8-be-be-e5-bc-8f-ef-bc-88-e4-b8-8b-ef-bc-89/</id>
+    <link href="http://123.56.84.132/public/2020/02/09/14/"/>
+    <id>http://123.56.84.132/public/2020/02/09/14/</id>
     <published>2020-02-09T14:17:25.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.312Z</updated>
     
     <summary type="html">
     
@@ -206,9 +186,9 @@
     
     </summary>
     
-      <category term="Java" scheme="http://123.56.84.132/public/categories/Java/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="代码学习" scheme="http://123.56.84.132/public/categories/Java/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Java" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/Java/"/>
     
     
       <category term="java" scheme="http://123.56.84.132/public/tags/java/"/>
@@ -221,10 +201,10 @@
   
   <entry>
     <title>（六） python条件判断与循环</title>
-    <link href="http://123.56.84.132/public/2020/02/09/python-e5-85-a5-e9-97-a8-e5-9f-ba-e7-a1-80-e7-af-87-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e4-b8-8e-e5-be-aa-e7-8e-af/"/>
-    <id>http://123.56.84.132/public/2020/02/09/python-e5-85-a5-e9-97-a8-e5-9f-ba-e7-a1-80-e7-af-87-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e4-b8-8e-e5-be-aa-e7-8e-af/</id>
+    <link href="http://123.56.84.132/public/2020/02/09/25/"/>
+    <id>http://123.56.84.132/public/2020/02/09/25/</id>
     <published>2020-02-08T23:05:09.000Z</published>
-    <updated>2020-03-06T05:00:07.850Z</updated>
+    <updated>2020-03-06T05:38:55.616Z</updated>
     
     <summary type="html">
     
@@ -249,10 +229,10 @@
   
   <entry>
     <title>（五）python数据类型（下）</title>
-    <link href="http://123.56.84.132/public/2020/02/08/ef-bc-88-e4-ba-94-ef-bc-89python-e6-95-b0-e6-8d-ae-e7-b1-bb-e5-9e-8b-ef-bc-88-e4-b8-8b-ef-bc-89/"/>
-    <id>http://123.56.84.132/public/2020/02/08/ef-bc-88-e4-ba-94-ef-bc-89python-e6-95-b0-e6-8d-ae-e7-b1-bb-e5-9e-8b-ef-bc-88-e4-b8-8b-ef-bc-89/</id>
+    <link href="http://123.56.84.132/public/2020/02/08/16/"/>
+    <id>http://123.56.84.132/public/2020/02/08/16/</id>
     <published>2020-02-08T09:55:39.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.358Z</updated>
     
     <summary type="html">
     
@@ -267,9 +247,9 @@
     
     </summary>
     
-      <category term="Python" scheme="http://123.56.84.132/public/categories/Python/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="代码学习" scheme="http://123.56.84.132/public/categories/Python/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Python" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/Python/"/>
     
     
       <category term="代码" scheme="http://123.56.84.132/public/tags/%E4%BB%A3%E7%A0%81/"/>
@@ -280,10 +260,10 @@
   
   <entry>
     <title>(六) Linux的Firewalld防火墙</title>
-    <link href="http://123.56.84.132/public/2020/02/07/e5-85-ad-linux-e7-9a-84firewalld-e9-98-b2-e7-81-ab-e5-a2-99/"/>
-    <id>http://123.56.84.132/public/2020/02/07/e5-85-ad-linux-e7-9a-84firewalld-e9-98-b2-e7-81-ab-e5-a2-99/</id>
+    <link href="http://123.56.84.132/public/2020/02/07/7/"/>
+    <id>http://123.56.84.132/public/2020/02/07/7/</id>
     <published>2020-02-07T11:25:48.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:56.100Z</updated>
     
     <summary type="html">
     
@@ -308,10 +288,10 @@
   
   <entry>
     <title>树莓派编译安装Mysql5.7</title>
-    <link href="http://123.56.84.132/public/2020/02/02/e6-a0-91-e8-8e-93-e6-b4-be-e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85mysql5-7/"/>
-    <id>http://123.56.84.132/public/2020/02/02/e6-a0-91-e8-8e-93-e6-b4-be-e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85mysql5-7/</id>
+    <link href="http://123.56.84.132/public/2020/02/02/8/"/>
+    <id>http://123.56.84.132/public/2020/02/02/8/</id>
     <published>2020-02-02T10:59:39.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:56.108Z</updated>
     
     <summary type="html">
     
@@ -335,10 +315,10 @@
   
   <entry>
     <title>（学前准备）linux安装及使用虚拟机安装</title>
-    <link href="http://123.56.84.132/public/2020/02/02/linux-e5-ae-89-e8-a3-85-e5-8f-8a-e4-bd-bf-e7-94-a8-ef-bc-88-e4-b8-80-ef-bc-89-e8-99-9a-e6-8b-9f-e6-9c-ba-e5-ae-89-e8-a3-85/"/>
-    <id>http://123.56.84.132/public/2020/02/02/linux-e5-ae-89-e8-a3-85-e5-8f-8a-e4-bd-bf-e7-94-a8-ef-bc-88-e4-b8-80-ef-bc-89-e8-99-9a-e6-8b-9f-e6-9c-ba-e5-ae-89-e8-a3-85/</id>
+    <link href="http://123.56.84.132/public/2020/02/02/24/"/>
+    <id>http://123.56.84.132/public/2020/02/02/24/</id>
     <published>2020-02-02T01:36:39.000Z</published>
-    <updated>2020-03-05T13:19:45.527Z</updated>
+    <updated>2020-03-06T05:38:55.586Z</updated>
     
     <summary type="html">
     
@@ -359,10 +339,10 @@
   
   <entry>
     <title>（五）Linux SSH远程访问命令行</title>
-    <link href="http://123.56.84.132/public/2020/02/01/ef-bc-88-e4-ba-94-ef-bc-89linux-ssh-e8-bf-9c-e7-a8-8b-e8-ae-bf-e9-97-ae-e5-91-bd-e4-bb-a4-e8-a1-8c/"/>
-    <id>http://123.56.84.132/public/2020/02/01/ef-bc-88-e4-ba-94-ef-bc-89linux-ssh-e8-bf-9c-e7-a8-8b-e8-ae-bf-e9-97-ae-e5-91-bd-e4-bb-a4-e8-a1-8c/</id>
+    <link href="http://123.56.84.132/public/2020/02/01/15/"/>
+    <id>http://123.56.84.132/public/2020/02/01/15/</id>
     <published>2020-02-01T11:40:43.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.342Z</updated>
     
     <summary type="html">
     
@@ -387,10 +367,10 @@
   
   <entry>
     <title>C++ const与static用法</title>
-    <link href="http://123.56.84.132/public/2020/02/01/418/"/>
-    <id>http://123.56.84.132/public/2020/02/01/418/</id>
+    <link href="http://123.56.84.132/public/2020/02/01/37/"/>
+    <id>http://123.56.84.132/public/2020/02/01/37/</id>
     <published>2020-02-01T05:26:41.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:56.007Z</updated>
     
     <summary type="html">
     
@@ -404,19 +384,19 @@
     
     </summary>
     
-      <category term="C++" scheme="http://123.56.84.132/public/categories/C/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="代码学习" scheme="http://123.56.84.132/public/categories/C/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+      <category term="C++" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/C/"/>
     
     
   </entry>
   
   <entry>
     <title>（四）python数据类型（上）</title>
-    <link href="http://123.56.84.132/public/2020/01/31/python-e5-85-a5-e9-97-a8-e5-9f-ba-e7-a1-80-e7-af-87-e6-95-b0-e6-8d-ae-e7-b1-bb-e5-9e-8b-e4-b8-8a/"/>
-    <id>http://123.56.84.132/public/2020/01/31/python-e5-85-a5-e9-97-a8-e5-9f-ba-e7-a1-80-e7-af-87-e6-95-b0-e6-8d-ae-e7-b1-bb-e5-9e-8b-e4-b8-8a/</id>
+    <link href="http://123.56.84.132/public/2020/01/31/26/"/>
+    <id>http://123.56.84.132/public/2020/01/31/26/</id>
     <published>2020-01-31T15:54:14.000Z</published>
-    <updated>2020-03-06T05:00:07.778Z</updated>
+    <updated>2020-03-06T05:38:55.646Z</updated>
     
     <summary type="html">
     
@@ -445,10 +425,10 @@
   
   <entry>
     <title>（三）pycharm编辑器安装与使用</title>
-    <link href="http://123.56.84.132/public/2020/01/31/python-e5-a4-96-e9-83-a8-e7-bc-96-e8-af-91-e5-99-a8ide-pycharm-e7-9a-84-e5-9f-ba-e7-a1-80-e4-bd-bf-e7-94-a8/"/>
-    <id>http://123.56.84.132/public/2020/01/31/python-e5-a4-96-e9-83-a8-e7-bc-96-e8-af-91-e5-99-a8ide-pycharm-e7-9a-84-e5-9f-ba-e7-a1-80-e4-bd-bf-e7-94-a8/</id>
+    <link href="http://123.56.84.132/public/2020/01/31/31/"/>
+    <id>http://123.56.84.132/public/2020/01/31/31/</id>
     <published>2020-01-31T15:37:49.000Z</published>
-    <updated>2020-03-06T05:00:07.911Z</updated>
+    <updated>2020-03-06T05:38:55.823Z</updated>
     
     <summary type="html">
     
@@ -478,10 +458,10 @@
   
   <entry>
     <title>（二）python开发—IDLE</title>
-    <link href="http://123.56.84.132/public/2020/01/31/python-e5-85-a5-e9-97-a8-e5-88-a9-e5-99-a8-e7-af-87/"/>
-    <id>http://123.56.84.132/public/2020/01/31/python-e5-85-a5-e9-97-a8-e5-88-a9-e5-99-a8-e7-af-87/</id>
+    <link href="http://123.56.84.132/public/2020/01/31/27/"/>
+    <id>http://123.56.84.132/public/2020/01/31/27/</id>
     <published>2020-01-31T15:01:44.000Z</published>
-    <updated>2020-03-06T05:00:07.809Z</updated>
+    <updated>2020-03-06T05:38:55.678Z</updated>
     
     <summary type="html">
     
@@ -510,10 +490,10 @@
   
   <entry>
     <title>（四）Linux守护进程和控制服务</title>
-    <link href="http://123.56.84.132/public/2020/01/31/ef-bc-88-e5-9b-9b-ef-bc-89linux-e5-ae-88-e6-8a-a4-e8-bf-9b-e7-a8-8b-e5-92-8c-e6-8e-a7-e5-88-b6-e6-9c-8d-e5-8a-a1/"/>
-    <id>http://123.56.84.132/public/2020/01/31/ef-bc-88-e5-9b-9b-ef-bc-89linux-e5-ae-88-e6-8a-a4-e8-bf-9b-e7-a8-8b-e5-92-8c-e6-8e-a7-e5-88-b6-e6-9c-8d-e5-8a-a1/</id>
+    <link href="http://123.56.84.132/public/2020/01/31/17/"/>
+    <id>http://123.56.84.132/public/2020/01/31/17/</id>
     <published>2020-01-31T07:08:29.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.385Z</updated>
     
     <summary type="html">
     
@@ -538,10 +518,10 @@
   
   <entry>
     <title>hanwckf 的Mi-R3G 路由器固件</title>
-    <link href="http://123.56.84.132/public/2020/01/31/hanwckf-e7-9a-84mi-r3g-e8-b7-af-e7-94-b1-e5-99-a8-e5-9b-ba-e4-bb-b6/"/>
-    <id>http://123.56.84.132/public/2020/01/31/hanwckf-e7-9a-84mi-r3g-e8-b7-af-e7-94-b1-e5-99-a8-e5-9b-ba-e4-bb-b6/</id>
+    <link href="http://123.56.84.132/public/2020/01/31/21/"/>
+    <id>http://123.56.84.132/public/2020/01/31/21/</id>
     <published>2020-01-31T02:50:25.000Z</published>
-    <updated>2020-03-05T13:19:45.527Z</updated>
+    <updated>2020-03-06T05:38:55.500Z</updated>
     
     <summary type="html">
     
@@ -565,10 +545,10 @@
   
   <entry>
     <title>gcc编译步骤</title>
-    <link href="http://123.56.84.132/public/2020/01/30/gcc-e7-bc-96-e8-af-91-e6-ad-a5-e9-aa-a4/"/>
-    <id>http://123.56.84.132/public/2020/01/30/gcc-e7-bc-96-e8-af-91-e6-ad-a5-e9-aa-a4/</id>
+    <link href="http://123.56.84.132/public/2020/01/30/19/"/>
+    <id>http://123.56.84.132/public/2020/01/30/19/</id>
     <published>2020-01-30T13:25:40.000Z</published>
-    <updated>2020-03-05T13:19:45.526Z</updated>
+    <updated>2020-03-06T05:38:55.430Z</updated>
     
     <summary type="html">
     
@@ -582,9 +562,38 @@
     
     </summary>
     
-      <category term="C++" scheme="http://123.56.84.132/public/categories/C/"/>
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="代码学习" scheme="http://123.56.84.132/public/categories/C/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+      <category term="C++" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C和C++后缀区别</title>
+    <link href="http://123.56.84.132/public/2020/01/30/1/"/>
+    <id>http://123.56.84.132/public/2020/01/30/1/</id>
+    <published>2020-01-30T13:09:40.000Z</published>
+    <updated>2020-03-06T05:38:55.201Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;C 头文件: .h 源文件: .c&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;CPP 头文件后缀名： .h, .hpp, .hxx 源文件后缀名：.cpp, .cc, .cxx, .C
+        
+      
+    
+    </summary>
+    
+      <category term="代码学习" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="C++" scheme="http://123.56.84.132/public/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/C/"/>
     
     
   </entry>
