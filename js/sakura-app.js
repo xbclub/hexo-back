@@ -214,7 +214,7 @@ mashiro_global.post_list_show_animation = new function () {
     })
   }
 }()
-mashiro_global.font_control = new function () {
+// mashiro_global.font_control = new function () {
   // this.change_font = function () {
   //   if ($('body').hasClass('serif')) {
   //     $('body').removeClass('serif')
