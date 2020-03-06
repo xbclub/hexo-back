@@ -1546,7 +1546,7 @@ $(function () {
       Siren.VA()
       Siren.MJ()
       Siren.AB()
-      Siren.TOC()
+      //Siren.TOC()
       // Siren.BSZ()
       if (mashiro_option.NProgressON) NProgress.done()
       mashiro_global.ini.pjax()
